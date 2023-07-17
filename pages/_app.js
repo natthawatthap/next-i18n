@@ -1,5 +1,16 @@
-import '@/styles/globals.css'
+// pages/_app.js
+import React from "react";
+import { appWithTranslation } from "next-i18next";
+import LanguageSwitcher from "../components/LanguageSwitcher";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+function App({ Component, pageProps }) {
+  return (
+    <div>
+      <LanguageSwitcher />
+      <Component {...pageProps} />
+    </div>
+  );
 }
+
+export default appWithTranslation(App);
