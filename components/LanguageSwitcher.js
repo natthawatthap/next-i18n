@@ -11,6 +11,7 @@ const LanguageSwitcher = () => {
     <div>
       <button onClick={() => changeLanguage("en")}>English</button>
       <button onClick={() => changeLanguage("th")}>ไทย</button>
+      <button onClick={() => changeLanguage("zh")}>简体中文</button>
     </div>
   );
 };
